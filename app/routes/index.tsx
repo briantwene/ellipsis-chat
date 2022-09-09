@@ -1,32 +1,18 @@
+import { Link } from "@remix-run/react";
+import Layout from "~/components/layout";
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <Layout direction="flex-col">
+      <nav className="flex justify-around border-b-2 border-b-black">
+        <div className="flex-1">Ellipsis</div>
+        <div className="flex justify-around flex-1">
+          <Link to="download">Download</Link>
+          <Link to="login">Login</Link>
+          <Link to="sign-up">Sign-up</Link>
+          <Link to="app">Go to app</Link>
+        </div>
+      </nav>
+      <h1>Welcome to ellipsis-chat</h1>
+    </Layout>
   );
 }
