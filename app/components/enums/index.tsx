@@ -27,14 +27,14 @@ export const userMenuEnum: enumObject[] = [
 
 export const settingMenuEnum: enumObject[] = [
   {
-    title: "Profile",
+    title: "Account",
     path: "/app/settings",
-    icon: <HiIcons.HiOutlineUserCircle />
+    icon: <HiIcons.HiOutlineIdentification />
   },
   {
-    title: "Account",
-    path: "account",
-    icon: <HiIcons.HiOutlineIdentification />
+    title: "Profile",
+    path: "/profile",
+    icon: <HiIcons.HiOutlineUserCircle />
   },
   {
     title: "Appearance",
